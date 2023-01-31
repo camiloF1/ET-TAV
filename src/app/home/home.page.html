@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      RegistrAPP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png" />
+    <ion-card-header>
+      <ion-card-title>RegistrAPP</ion-card-title>
+      <ion-card-subtitle>Agilizamos el proceso de asistencia</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Solo con un QR tu asistencia quedará lista
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-button expand="block" [routerLink]="['/loginalumno']">Alumno</ion-button>
+  <br>
+  <ion-button expand="block" [routerLink]="['/login']">Docente</ion-button>
+
+
+</ion-content>

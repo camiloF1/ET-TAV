@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-button [routerLink]="['/home']"><ion-icon name="arrow-back-outline"></ion-icon></ion-button><br>
+
+
+<form action="">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¿Como restablezco mi contraseña?</ion-card-title>
+      <ion-card-subtitle>Para restablecer tu contraseña sigue los siguientes pasos: </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      1) Ingresa tu correo en el campo correspondiente y selecciona confirmar <br>
+      2) Luego se te enviará un correo electronico al correo que ingresaste, y podrás ingresar una nueva contraseña <br>
+      <br>
+      IMPORTANTE: Si no tienes acceso al correo electronico pide ayuda en el duoc presencialmente para restablecer tu contraseña
+    </ion-card-content>
+  </ion-card>
+
+<ion-item>
+  <ion-label position="floating">Ingresa tu correo</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-button expand="block" (click)="alertaContrasena()">Confirmar</ion-button>
+</form>
+
+</ion-content>

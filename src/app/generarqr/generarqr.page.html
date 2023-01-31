@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Código QR para asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-button [routerLink]="['/inicio-docente']"><ion-icon name="arrow-back-outline"></ion-icon> </ion-button>
+  <ion-card class="ion-text-center">
+    <ion-card-content>
+      <qrcode [qrdata]="qrCodeString" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-content>

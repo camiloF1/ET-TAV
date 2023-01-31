@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <h1>{{ nombre | titlecase }} {{ apellido | titlecase }}</h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/login']"><ion-icon name="log-out-outline"></ion-icon></ion-button>
+  <ion-card >
+    <ion-card-header>
+      <ion-card-title> Bienvenido {{ username }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Edad: {{edad}} <br>
+      Asignatura: {{ asignatura }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" [routerLink]="['/generarqr']"><ion-icon name="qr-code-outline"></ion-icon> Generar código QR</ion-button>
+
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <h1>{{ nombre | titlecase }} {{ apellido | titlecase }}</h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/loginalumno']"><ion-icon name="log-out-outline"></ion-icon></ion-button>
+  <ion-card >
+    <ion-card-header>
+      <ion-card-title> Bienvenido {{ username }} </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Edad: {{edad}} <br>
+      Carrera: {{ carrera }}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" class="ion-margin" (click)="startScan()">Scan QR Code</ion-button>
+
+</ion-content>
